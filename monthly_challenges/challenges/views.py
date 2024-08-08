@@ -4,6 +4,8 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 def index(request, month_int):
     return HttpResponse(month_int)
     
+def hello(request):
+    return HttpResponse("Challenge Home Page - Hello")    
 
 d = {"january":"jan", 
     "feburary":"feb",

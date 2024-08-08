@@ -6,7 +6,8 @@ from django.urls import path
 #router.register('challenges', views.index)
 
 urlpatterns = [
-     path('<int:month_int>' , views.redirect ),
+    path('' , views.hello ),
+    path('<int:month_int>' , views.redirect ),
     #path('<int:month_int>' , views.index ),
     path("<str:month>", views.hybrid),
    
