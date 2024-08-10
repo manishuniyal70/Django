@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-_3+(m_bqu3-e#mocd4=_kb=5ed7z87v#$uu!jbw17%9^*#htu8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-'localhost',
-]
+ALLOWED_HOSTS = ['localhost', '192.168.0.107','stories.pdfcup.com','http://stories.pdfcup.com',]
 
 
 # Application definition
@@ -121,6 +119,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
 
 # Default primary key field type
