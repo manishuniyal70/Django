@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-_3+(m_bqu3-e#mocd4=_kb=5ed7z87v#$uu!jbw17%9^*#htu8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '192.168.0.107','stories.pdfcup.com','http://stories.pdfcup.com',]
+#VM Pub - '3.221.192.85'
+#VM Loc -'10.4.33.15'
+#Local Server - 192.168.0.107'
+ALLOWED_HOSTS = ['localhost','10.4.33.15','3.221.192.85', '192.168.0.107','stories.pdfcup.com','http://stories.pdfcup.com',]
 
 
 # Application definition
